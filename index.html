@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/emojioneareaMin.css">
+<script 
+src="https://code.jquery.com/jquery-2.2.4.js" 
+integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" 
+crossorigin="anonymous"></script>
+
+<script src="js/emojioneareaMin.js" ></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v13.0" nonce="0lVKudmP"></script>
+<div id="menu">
+<ul>
+<!-- <img src="logo.jpeg" width="2%" height="100%"> -->
+<li class="background"></li>
+<li class="like"><a href="#like1"></a></li>
+<li><a href="#contact">Contact Me</a></li>
+<li><a href="#spa">Q&A</a></li>
+<li><a href="#qrcoder">QR code</a></li>
+<li><a href="#playlist">My Playlist</a></li>
+<li><a href="#photos">My Photos</a></li>
+<li><a class="active" href="#about">About Me</a></li>
+
+</ul>
+</div>
+<br/>
+
+<section id="about" class="section">
+<br>
+<br>
+    <h1>About Me</h1>
+    <br/>
+      <li class="T"> Yehoram Gaon was born on December 28, 1939. <br>
+      Yehoram Gaon is an Israeli singer, actor, director, comedian, producer, TV and radio host, and public figure.<br>
+      He has also written and edited books on Israeli culture.  
+    </li>
+    <br/>
+
+</section>
+
+<section id="photos" class="section">
+  <h1>My Photos</h1>
+<br/>
+<img src="photos/yehoramGaon1.jpg" class="galleryImage">
+<img src="photos/yehoramGaon2.jpg" class="galleryImage">
+<img src="photos/yehoramGaon3.jpg" class="galleryImage">
+<img src="photos/yehoramGaon4.jpg" class="galleryImage">
+<img src="photos/yehoramGaon5.jpg" class="galleryImage">
+<img src="photos/yehoramGaon6.jpg" class="galleryImage">
+<img src="photos/yehoramGaon7.jpg" class="galleryImage">
+<img src="photos/yehoramGaon8.jpg" class="galleryImage">
+<img src="photos/yehoramGaon9.jpg" class="galleryImage">
+<br/>
+
+</section>
+
+<section id="playlist" class="section">
+    <h1>My Playlist</h1>
+    <br/>
+    <p align="center"><iframe width="853" height="480" src="https://www.youtube.com/embed/oNaepJm4sgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <br/>
+</section>
+
+<section id="qrcoder" class="section">
+    <h1>Scan my code</h1>
+    <br>
+    <p align="center"><iframe width="330" height="330" src="https://qrfree.kaywa.com/?l=1&s=8&d=https%3A%2F%2Fweb-development-environments-2021.github.io%2Fassignment1-ronigu1%2F" frameborder="0" ></iframe></p>
+</section>
+
+<section id="spa" class="section">
+    <h1>Ans</h1>
+    <ol type="1" class="QA">
+     <br/>
+     Q1:
+      <li>Web 1.0 is read-only, allows one-way flow of information from the producer to the reader as the reader cannot modify the web content,<br> Web 2.0 is read-write and web 3.0 is smart read-write. </li>
+      <li>Web 1.0 is the Web (in its start position), web 2.0 is considered the Social Web and web 3.0 is the Semantic Web. </li>
+      <li>search engines: Web 1.0-retrieve macro, web 2.0-retrieve micro, web 3.0-will hopefully retrieve micro-content texts which were tagged automatically .</li>
+      Q2:
+          <br>-Use Case Example - Search for the query "Side effects of certain medicine":
+        <li>Web 1.0: The website would have shown static information about the specific medicine(a set of static Websites, providing no interactive content). <br>The user Could not respond to the content directly from the internet</li>
+        <li>Web 2.0: The website also would have shown information about the medicine, but it would have contained comments of other users and there have been an option for the user to comment by himsel(kind of forum)</li>
+        <li>Web 3.0: The websites would have shown the information and would recommend more accurate searches based on recommendation systems and other AI methods.</li>
+        <br>
+      </li>
+
+
+      <br>
+    </ol>
+</section>
+
+<section id="contact" class="section">
+  <h1>Contact Me</h1>
+<br/>
+<!-- <a href="mailto:ronigu@post.bgu.ac.il" >senfddd</a> -->
+<p align=center></p>
+<form class="main" action="mailto:ronigu@post.bgu.ac.il" method="post", enctype="text/plain">
+  <table cellpadding="2" cellspacing="2">
+    <caption align="left" valign="top">Please fill the following details :</caption>
+    <tr>
+      <td><label>your E-mail:</label></td>
+      <td colspan="3"><input type="text" class="txtClassLong" ID="mail" NAME="E-mail Adress"></td>
+    </tr>
+    <tr>
+      <td><label>message:</label></td>
+      <td colspan="3"><TEXTAREA input type="text" class="txtClassLong" ID="message" NAME="message"  ROWS = "4" COLS = "36"></TEXTAREA></td>
+      <script>
+        $(document).ready(function(){
+          $("#message").emojioneArea();
+        })
+      </script>
+    
+    </tr>
+    <tr>
+      <!-- <td><input type="submit" class="btnClass" value="send E-mail" ></td> -->
+      <td>
+        <button class="btnClass" type="submit"> Send </button>
+      </td>
+
+      <!-- <td><input type="reset" class="btnClass" value="Reset E-mail" ></td> -->
+    </tr>
+</table>
+</form>
+
+<br/>
+</section>
+
+<section id="like1" class="section" >
+  <h1>Give me a Like ♥</h1>
+<br/>
+<br/>
+<div class="fb-like" 
+data-href="https://www.facebook.com/%D7%99%D7%94%D7%95%D7%A8%D7%9D-%D7%92%D7%90%D7%95%D7%9F-558037670906980/" 
+data-width="" 
+data-layout="box_count" 
+data-action="like" 
+data-size="large" 
+data-share="false"></div>
+  <br/>
+  <br/>
+  </section>
+
+
+<script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash);
+  });
+});
+</script>
+<script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+  });​
+ </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+</body>
+</html>
