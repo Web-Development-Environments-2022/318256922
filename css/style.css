@@ -41,7 +41,7 @@ ul {
   }
 
   .like{
-	background-image: url("/photos/likeB.webp");
+	background-image: url("../photos/likeB.webp");
 	background-size: 70px;
 	width: 68px;
 	height: 45px;
@@ -61,7 +61,7 @@ ul {
 }
   .background {
 	float: left;
-	background-image: url("/photos/logo.jpeg");
+	background-image: url("../photos/logo.jpeg");
 	background-size: 55px;
 	width: 55px;
 	height: 45px;
