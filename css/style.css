@@ -1,3 +1,6 @@
+body{
+ margin: 0;
+}
 #menu
 /* .class = Selects all elements with class="intro"
 #id = Selects the element with id="firstname" */
@@ -10,6 +13,23 @@
 	top: 0;
 	background: white;
 }
+.YehoramGaonSide{
+	width:100% ;
+	height:auto;
+}
+.interPhoto{
+	position: static;
+	padding-top: 46px;
+}
+/* .navi{
+	display: inline-flex;
+	width: 100%;
+}
+.navin{
+	display: inline-flex;
+	justify-content: center;
+	
+} */
 ul {
 	/* list-style-type: none;
 	margin: 0;
@@ -33,7 +53,7 @@ ul {
 	display: block;
 	color: white;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 14px 11.1px;
 	text-decoration: none;
   }
   .active {
@@ -41,9 +61,9 @@ ul {
   }
 
   .like{
-	background-image: url("../photos/likeB.webp");
-	background-size: 70px;
-	width: 68px;
+	background-image: url("../photos/likeB.png");
+	background-size: 44px;
+	width: 43px;
 	height: 45px;
 	background-color: black;
 	/* pointer-events: none; */
@@ -96,27 +116,10 @@ ul {
     height: 75%;
 }
 .fb-like{
-	/* display: flex;
-	justify-content: center; */
-	/* display:block;
-	margin-left: auto;
-	margin-right: auto;
-	float:middle; */
-	width:200px;
-	height:200px;
-	/* position: fixed; */
-	top: 50%;
-	left: 50%;
-	right: 50%;
-	margin-top: -100px;
-	margin-left: -46px;
 
-
-	/* top: 50%;
-	left: 53%;
-	right: 47%;
-	margin-top: -100px;
-	margin-left: -100px; */
+	padding-left: 46%;
+	padding-right: 46%;
+	padding-bottom: 20px;
 
 }
 .QA{
@@ -125,19 +128,22 @@ ul {
 	font-family:Cambria;
 	list-style-type: "\1F44D"; 
 }
+
 form.main
 {
 	border-right: darkblue thin groove;
 	border-top: darkblue thin groove;
-	left: 90px;
 	border-left: darkblue thin groove;
 	border-bottom: darkblue thin groove;
-	position: sticky;
 	top: 60px;
 	background-color: azure;
 	width:85%;
 	height:45%;
+	justify-content: space-evenly;
+	display: inline-flex;
+	/* justify-content: center; */
 }
+
 .txtClass
 {
 	border-right: black 1px solid;
@@ -157,7 +163,9 @@ form.main
 	background-color: rgb(255, 255, 255);
 	width:400px;
 }			
-
+#sendTd{
+	display: inline-block;
+}
 .btnClass
 {
 	border-right: black 1px groove;
@@ -165,6 +173,8 @@ form.main
 	border-left: black 1px groove;
 	border-bottom: black 1px groove;
 	background-color: lightblue;
+	cursor: pointer;
+	width: -webkit-fill-available;
 }
 
 .qrcoder{
@@ -175,4 +185,15 @@ form.main
     height: 75%;
 }
 
+#contact{
+	justify-content: space-evenly;
+	display: inline-block;
+	width: 100%;
+	text-align: -webkit-center;
+}
+section{
+	padding-top: 28px;
+	padding-bottom: 28px;
 
+
+}
