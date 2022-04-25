@@ -33,6 +33,7 @@ crossorigin="anonymous"></script>
 
 <section id="about" class="section">
     <h1>About Me</h1>
+
       <li class="T"> Yehoram Gaon was born on December 28, 1939. <br>
       Yehoram Gaon is an Israeli singer, actor, director, comedian, producer, TV and radio host, and public figure.<br>
       He has also written and edited books on Israeli culture.  
@@ -84,9 +85,7 @@ crossorigin="anonymous"></script>
   <h1>Contact Me</h1>
 <!-- <a href="mailto:ronigu@post.bgu.ac.il" >senfddd</a> -->
 <p align=center></p>
-<form class="main" action="https://formsubmit.co/ronigu@post.bgu.ac.il" method="post", enctype="text/plain">
-  <input type="hidden" name="_next"
-              value="https://web-development-environments-2022.github.io/assignment1-ronigu1/">
+<form id="contact-form" class="main" action="https://formsubmit.co/ronigu@post.bgu.ac.il" method="POST">
   <table cellpadding="2" cellspacing="2">
     <caption align="left" valign="top">Please fill the following details :</caption>
     <tr>
@@ -96,6 +95,9 @@ crossorigin="anonymous"></script>
     <tr>
       <td><label>message:</label></td>
       <td colspan="3"><TEXTAREA input type="text" class="txtClassLong" ID="message" NAME="message"  ROWS = "4" COLS = "36"></TEXTAREA></td>
+      <input type="hidden" name="_next" 
+      value="https://web-development-environments-2022.github.io/assignment1-ronigu1/">
+
       <script>
         $(document).ready(function(){
           $("#message").emojioneArea();
